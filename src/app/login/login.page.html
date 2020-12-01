@@ -1,24 +1,19 @@
-<ion-header >
-    <ion-toolbar >
-        <ion-title>Login</ion-title>
-    </ion-toolbar>
-</ion-header>
-
 <ion-content>
+    <h2>Login</h2>
+    <br><br><br><br><br>
     <form [formGroup]="loginForm" (ngSubmit)="login()">
-        <ion-list>
-            <ion-item>
-                <ion-label>Email</ion-label>
-                <ion-input type="email" formControlName="email"></ion-input>
-            </ion-item>
-            <ion-item>
-                <ion-label>Senha</ion-label>
-                <ion-input type="password" formControlName="password"></ion-input>
-            </ion-item>
-
-          <ion-button (click)="login()">Ok</ion-button>
-          <ion-button (click)="register()">Cadastro</ion-button>
-          <ion-button (click)="forgotPassword()">Esqueceu Senha</ion-button>
-        </ion-list>
+        <ion-item>
+            <ion-label>Email</ion-label>
+            <ion-input type="email" formControlName="email"></ion-input>
+        </ion-item>
+        <ion-item>
+            <ion-label>Senha</ion-label>
+            <ion-input type="password" formControlName="password"></ion-input>
+        </ion-item>
+        <br><br><br>
+        <ion-button expand="block" (click)="login()">Entrar</ion-button>
+        <br>
+        <ion-button expand="block" color="transparent" (click)="register()">Cadastro</ion-button>
+        <ion-button expand="block" color="transparent" (click)="forgotPassword()">Esqueceu Senha</ion-button>
     </form>
 </ion-content>

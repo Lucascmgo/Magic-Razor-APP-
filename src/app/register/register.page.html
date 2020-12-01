@@ -1,33 +1,29 @@
-<ion-header>
-  <ion-toolbar>
-      <ion-title>Cadastro</ion-title>
-  </ion-toolbar>
-</ion-header>
-
 <ion-content>
-  <form [formGroup]="loginForm">
-    <ion-list>
-      <ion-item>
-        <ion-label>Nome Completo</ion-label>
-        <ion-input type="name" formControlName="name"></ion-input>
-      </ion-item>
+    <h2>Cadastro</h2>
+    <br><br><br><br><br>
+    <form [formGroup]="loginForm">
+        <ion-item>
+            <ion-label>Nome Completo</ion-label>
+            <ion-input type="name" formControlName="name"></ion-input>
+        </ion-item>
 
-      <ion-item>
-        <ion-label>Email</ion-label>
-        <ion-input type="email" formControlName="email"></ion-input>
-      </ion-item>
+        <ion-item>
+            <ion-label>Email</ion-label>
+            <ion-input type="email" formControlName="email"></ion-input>
+        </ion-item>
 
-      <ion-item>
-        <ion-label>Senha</ion-label>
-        <ion-input type="password" formControlName="password"></ion-input>
-      </ion-item>
-      <ion-item>
-        <ion-label>Telefone</ion-label>
-        <ion-input type="phone" formControlName="phone"></ion-input>
-      </ion-item>
+        <ion-item>
+            <ion-label>Senha</ion-label>
+            <ion-input type="password" formControlName="password"></ion-input>
+        </ion-item>
+        <ion-item>
+            <ion-label>Telefone</ion-label>
+            <ion-input type="phone" formControlName="phone"></ion-input>
+        </ion-item>
 
-      <ion-button (click)="register()">Cadastrar</ion-button>
-      <ion-button (click)="goBack()">Voltar</ion-button>
-    </ion-list>
-  </form>
+        <br><br><br>
+        <ion-button expand="block" (click)="register()">Cadastrar</ion-button>
+        <br>
+        <ion-button expand="block" color="transparent"(click)="goBack()">Voltar</ion-button>
+    </form>
 </ion-content>

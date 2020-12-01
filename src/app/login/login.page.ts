@@ -39,7 +39,6 @@ export class LoginPage implements OnInit {
      */
     login() {
         this.angularFireAuth.signInWithEmailAndPassword(this.loginForm.get('email').value, this.loginForm.get('password').value).then(resp => {
-            console.log(resp);
             this.navCtrl.navigateRoot('home');
         }).catch(error => {
             console.log(error);
@@ -54,7 +53,6 @@ export class LoginPage implements OnInit {
     }
 
     forgotPassword() {
-        console.log('Entrou aqui');
         this.route.navigate(['/forgot-password']);
     }
 }

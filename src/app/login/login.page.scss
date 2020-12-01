@@ -1,12 +1,13 @@
-page-login{
-  .login{
-    width: 100%;
-    height: 100%;
-
-    background-image: url("/src/assets/background-barber-aux.jpg");
-  }
+ion-item {
+  color: #ffffff;
 }
 
+h2 {
+  text-align: center;
+  color: #ffffff;
+  font-weight: bold;
+}
 
-
-
+ion-button {
+  position: center;
+}

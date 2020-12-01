@@ -14,7 +14,6 @@ export class SchedulePage implements OnInit {
     calendar;
     dates;
 
-
     constructor(
         private router: Router
     ) {
